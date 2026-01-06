@@ -5,7 +5,7 @@
 
 **Word Masters** is a browser-based word guessing game inspired by the popular game Wordle. Built with vanilla JavaScript, HTML, and CSS, it challenges players to guess a secret 5-letter word within 6 attempts, providing visual feedback on the accuracy of each letter.
 
-## 📖 Table of Contents
+## Table of Contents
 
 * [Features](https://www.google.com/search?q=%23features)
 * [How it Works](https://www.google.com/search?q=%23how-it-works)
@@ -14,7 +14,7 @@
 * [Technologies Used](https://www.google.com/search?q=%23technologies-used)
 * [Project Structure](https://www.google.com/search?q=%23project-structure)
 
-## ✨ Features
+## Features
 
 * **Daily Word Fetching:** Automatically fetches a "Word of the Day" from an external API.
 * **Input Validation:** Validates if the user's guess is a real English word via API before processing.
@@ -27,7 +27,7 @@
 * **Interactive UI:** Includes loading spinners, **crimson border flashing** for invalid words, and a rainbow victory animation.
 * **Responsive Grid:** Adapts the game board layout for different screen sizes.
 
-## 🎮 How it Works
+## How it Works
 
 1. **Initialization:** When the game loads, it fetches a random 5-letter word.
 2. **Guessing:** The player types a 5-letter word and presses `Enter`.
@@ -43,7 +43,7 @@
 
 
 
-## 🚀 Installation & Usage
+## Installation & Usage
 
 Since this is a static web application, no build process or package manager (npm/yarn) is required.
 
@@ -75,7 +75,7 @@ parcel index.html
 
 
 
-## 🧠 Game Logic & Architecture
+## Game Logic & Architecture
 
 ### Core JavaScript Logic (`word-masters.js`)
 
@@ -111,7 +111,7 @@ The application uses the `words.dev-apis.com` endpoints:
 * `GET /word-of-the-day`: Retrieves the target word.
 * `POST /validate-word`: Checks if the user's input is a valid English word.
 
-## 🛠 Technologies Used
+## Technologies Used
 
 * **HTML5:** Semantic structure and grid layout containers.
 * **CSS3:**
@@ -127,7 +127,7 @@ The application uses the `words.dev-apis.com` endpoints:
 
 
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 /
