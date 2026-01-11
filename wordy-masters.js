@@ -103,15 +103,43 @@ async function init() {
             return;
         }
         const action = event.key;
-
-        if (action === "Enter") {
-            commit();
-        } else if (action === "Backspace") {
-            backspace();
-        } else if (isLetter(action)) {
-            addLetter(action.toUpperCase());
-        }
+        handleInput(action);
     })
+
+    document.querySelector(".keyboard").addEventListener("click", function (event) {
+        if (done || isLoading) {
+            return;
+        }
+
+        const target = event.target;
+
+        const keyButton = target.closest(".key");
+
+        if (!keyButton) {
+            return;
+        }
+
+        let action = keyButton.innerText;
+
+        if (keyButton.dataset.key) {
+            action = keyButton.dataset.key;
+        }
+
+        handleInput(action);
+
+        keyButton.blur();
+    })
+
+    function handleInput(action) {
+    if (action === "Enter") {
+        commit();
+    } else if (action === "Backspace") {
+        backspace();
+    } else if (isLetter(action)) {
+        addLetter(action.toUpperCase());
+    }
+}
+
 }
 
 function setLoading(isLoading) {

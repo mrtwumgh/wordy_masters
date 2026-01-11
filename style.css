@@ -98,6 +98,69 @@ body {
   justify-content: center;
 }
 
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0 8px;
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.key-row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 8px;
+  justify-content: center;
+  touch-action: manipulation;
+}
+
+.key {
+  font-family: inherit;
+  font-weight: bold;
+  border: 0;
+  padding: 0;
+  margin: 0 3px;
+  height: 58px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  background-color: #d3d6da;
+  color: black;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.key-big {
+  flex: 1.5;
+  font-size: 12px;
+}
+
+.key:active {
+  background-color: #bbb;
+}
+
+.key.correct {
+  background-color: darkgreen;
+  color: white;
+}
+
+.key.close {
+  background-color: goldenrod;
+  color: white;
+}
+
+.key.wrong {
+  background-color: #787c7e;
+  color: white;
+}
+
 
 /* winner animation */
 
